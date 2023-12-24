@@ -1,0 +1,15 @@
+{
+  "name": "merge",
+  "version": "1.0.0",
+  "description": "apps merge on windows taskbar",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ebenjs",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^27.0.4"
+  }
+}
