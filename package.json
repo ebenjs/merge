@@ -2,14 +2,21 @@
   "name": "merge",
   "version": "1.0.0",
   "description": "apps merge on windows taskbar",
-  "main": "src/main.js",
+  "main": "dist/main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix ."
   },
   "author": "ebenjs",
   "license": "ISC",
   "dependencies": {
     "electron": "^27.0.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
